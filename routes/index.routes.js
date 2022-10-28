@@ -20,6 +20,21 @@ const config = {
 
 router.use(auth(config));
 
+const externalUrl = process.env.RENDER_EXTERNAL_URL;
+const port = externalUrl && process.env.PORT ? parseInt(process.env.PORT) : 8080;
+
+if (externalUrl) {
+    const hostname = '127.0.0.1';
+    app.listen(port, hostname, () => {
+        console.log(`Server locally running at http://${hostname}:${port}/ and from outside on ${externalUrl}`);
+    });
+}
+else {
+    app.listen(port, () => {
+        console.log(`server started at http://localhost:${port}`);
+    });
+
+}
 
 router.get('/profile', requiresAuth(), (req, res) => {
    if(req.oidc.user === undefined){
