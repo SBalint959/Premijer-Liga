@@ -134,7 +134,7 @@ router.get('/:id',async function (req, res, next) {
    }
 });
 
-router.post('/', async function(req, res, next) {
+router.post('/komentar/:id', async function(req, res, next) {
    const topPlayer = req.body;
    try {
       const sql2 = `INSERT INTO topplayers VALUES (

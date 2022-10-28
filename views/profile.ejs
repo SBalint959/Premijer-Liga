@@ -27,8 +27,12 @@
       <h2></h2>
       <div class="profile-display">
          <ul>
-             <li>Uloga: <%= data.app_metadata %></li>
-             <li>E-mail: <%= data.email %></li>
+            <% if (data.email == "naprwebadmin123@nrppw.hr") { %>
+               <li>Uloga: Admin</li>
+            <% } else { %>
+               <li>Uloga: Korisnik</li>
+            <% } %>
+            <li>E-mail: <%= data.email %></li>
          </ul>
      </div>
    </div>
