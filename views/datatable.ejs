@@ -14,7 +14,7 @@
 <body class="centered">
 
     <div class="header">
-        <h1>Database</h1>
+        <h1>Baza podataka</h1>
         <form method="get" action="/" class="main-button">
             <button type="submit" class="button">Home</button>
         </form>
@@ -134,7 +134,7 @@
                  <td><%= red.team2goalsscored %></td>
                  <td style="background-color: aquamarine;"><%= red.team2name %></td>
                  <td><%= red.team2id %></td>
-                 <td><%= red.matchid %></td>
+                 <td><a href="/" + red.matchid>><%= red.matchid %></a></td>
              </tr>
          <% } %>
         </tbody>
