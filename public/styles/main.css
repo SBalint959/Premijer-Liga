@@ -1,0 +1,169 @@
+.header {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    background: #a3aaaf;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    justify-content: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e3031;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.footer-profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e3031;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footer-table {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e3031;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.tablica {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    
+}
+
+.tablica thead tr {
+    background-color: #212529;
+    color: #ffffff;
+    text-align: center;
+}
+
+.tablica th,
+.tablica td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tablica tbody tr {
+    background-color: #f3f3f3;
+}
+
+.centered {
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.button {
+    margin: auto;
+    border: 2px solid #d1d1d1;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 20px;
+    padding: 15px 32px;
+}
+
+
+.button:hover {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.main-button {
+    text-align: center;
+    font-size: medium;
+}
+
+.main-button-naslov {
+    font-size: large;
+    text-align: center;
+
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #a3aaaf;
+}
+
+.searchbar {
+    width: 30%;
+    font-size: 16px;
+    padding: 10px 20px 10px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#filter {
+    width: 13%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: 10px 20px 10px 40px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.scaled-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.scaled-image-fixed {
+    position: absolute;
+    display: block;
+    width: 150px;
+    left: 300px;
+}
+
+h1 {
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.podaci{
+    position: relative;
+    left: 30px;
+    padding: 7px;
+}
+
+.profile-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.58);
+    max-width: 25%;
+    margin: auto;
+    color: white;
+}
+.login-buttons{
+    margin-right: auto;
+    margin-left: 90%;
+    border: 2px solid #d1d1d1;
+    color: black;
+    font-size: 20px;
+    padding: 15px 32px;
+}
