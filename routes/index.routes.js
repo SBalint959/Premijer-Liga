@@ -13,7 +13,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: '4ArGK9pV6XX1x2I0ap6zosH2rQEjbpFMyaxXVHlkhp9jMMIyh7M9qxubr54SUZJ5',
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://web2projekt.onrender.com',
   clientID: '9UNrlmRyzaM1Fitl3Y5Hb8OhDUaC4jD4',
   issuerBaseURL: 'https://dev-xxdzkni1.us.auth0.com'
 };
