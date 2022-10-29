@@ -37,22 +37,5 @@ router.get('/', async function (req, res, next) {
 });
 
 
-router.get('/commentsa/:commentida', async function (req, res, next) {
-    const id = req.params.commentida;
-    const sqlPodaci = `SELECT * FROM CommentsA WHERE matchid = ${id}`;
-    const resultPodaci = (await db.query(sqlPodaci, [])).rows;
-    const rawPodaci = JSON.stringify(resultPodaci)
-    const jsonPodaci = JSON.parse(rawPodaci);
 
-    const sqlPodaci2 = `SELECT * FROM MatchesA WHERE matchid = ${id}`;
-    const resultPodaci2 = (await db.query(sqlPodaci2, [])).rows;
-    const rawPodaci2 = JSON.stringify(resultPodaci2)
-    const jsonPodaci2 = JSON.parse(rawPodaci2);
-
-    res.render('commentA', {
-        title: 'Komentari',
-        podaci: jsonPodaci,
-        utakmica: jsonPodaci2
-    })
-});
 module.exports = router;
