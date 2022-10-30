@@ -141,6 +141,61 @@
     </table>
     </br>
 
+    <h2>Grupa A raspored</h2>
+    <br>
+    <table class="tablica centered" style="text-align: center;" id="rezultatiA">
+        <thead>
+            <tr>
+                <th>Kolo</th>
+                <th>Id domaćina</th>
+                <th>Domaćini</th>
+                <th>Gosti</th>
+                <th>Id gostiju</th>
+                <th>ID utakmice</th>
+            </tr>
+        </thead>
+        <tbody>
+         <% for (let red of podaciA3) { %>
+             <tr>
+                 <td><%= red.round %></td>
+                 <td><%= red.team1id %></td>
+                 <td style="background-color: aquamarine;"><%= red.team1name %></td>
+                 <td style="background-color: aquamarine;"><%= red.team2name %></td>
+                 <td><%= red.team2id %></td>
+                 <td><%= red.matchid %></td>
+             </tr>
+         <% } %>
+        </tbody>
+    </table>
+    </br>
+    <h2>Grupa B raspored</h2>
+    <br>
+    <table class="tablica centered" style="text-align: center;" id="rezultatiA">
+        <thead>
+            <tr>
+                <th>Kolo</th>
+                <th>Id domaćina</th>
+                <th>Domaćini</th>
+                <th>Gosti</th>
+                <th>Id gostiju</th>
+                <th>ID utakmice</th>
+            </tr>
+        </thead>
+        <tbody>
+         <% for (let red of podaciB3) { %>
+             <tr>
+                 <td><%= red.round %></td>
+                 <td><%= red.team1id %></td>
+                 <td style="background-color: aquamarine;"><%= red.team1name %></td>
+                 <td style="background-color: aquamarine;"><%= red.team2name %></td>
+                 <td><%= red.team2id %></td>
+                 <td><%= red.matchid %></td>
+             </tr>
+         <% } %>
+        </tbody>
+    </table>
+    </br>
+
     <div class="footer-table">
         <p style="font-family: Arial, Helvetica, sans-serif;">Creative Commons BY-SA</p>
         <p style="font-family: Arial, Helvetica, sans-serif; font-size: smaller;">Rukometna premijer liga 2022./23.</p>

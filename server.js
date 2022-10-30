@@ -7,7 +7,6 @@ const db = require('./db')
 
 const indexRouter = require('./routes/index.routes');
 const datatableRouter = require('./routes/datatable.routes');
-//const apiRouter = require('./routes/api.routes');
 
 const { pool } = require('./db');
 
@@ -21,7 +20,6 @@ app.use(bodyParser.json())
 
 app.use('/', indexRouter);
 app.use('/datatable', datatableRouter);
-//app.use('/api/v1/departments', apiRouter);
 
 const externalUrl = process.env.RENDER_EXTERNAL_URL;
 const port = externalUrl && process.env.PORT ? parseInt(process.env.PORT) : 8080;
